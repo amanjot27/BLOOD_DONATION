@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Request</title>
+    <!-- Include CSS file -->
+    <link rel="stylesheet" type="text/css" href="br.css">
+</head>
+<body>
+    <h1>Blood Request</h1>
+    <div class="request-container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="blood-type">Blood Type:</label>
+        <select id="blood-type">
+            <option value="select" aria-placeholder="select" ></option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="Enter your location" required>
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" placeholder="Enter your contact number" required>
+        <button onclick="submitBloodRequest()">Submit Request</button>
+    </div>
+    <!-- Include JavaScript file -->
+    <script src="br.js">
+        
+    </script>
+    
+
+</body>
+</html>
