@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="https://ashpublications.org/blood" target="_blank">News</a>
+                <a href="#donors">donors</a>              
+                <a href="#">More</a>
+                <a href="#blood bank">Blood Bank</a>
+              </div>
+        </div>
+    </header> 
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Donate Blood, Save Lives</h1>
+                <p>Join our community of donors and help those in need.</p>
+                <a href="eligibility.html" class="cta-button">Register Now</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="paragraph-container">
+            <h2>About Us</h2>
+            <div class="read-more">
+
+                <div class="container">
+                    <p>At heartbeat donors, we are passionate about saving lives and making a positive impact in our community. Our platform serves as a crucial link between donors and those in need, bringing together individuals from all walks of life with a shared goal: to make a difference and give the gift of life.<span id="dots">...</span><span id="more">Our mission is simple yet powerful: to foster a thriving and self-sufficient blood donation ecosystem that ensures a constant and reliable supply of blood products for patients in need. We firmly believe that every drop of blood donated has the potential to transform lives, and that's why we strive to create a seamless and user-friendly experience for donors and recipients alike.
+                    </span></p>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>    
+                   
+                </div>
+            </div>    
+           
+
+        </div>
+        
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="donors">
+        <div class="container">
+            <h2>Find Blood Donors</h2>
+            <div class="search-container">
+                <label for="blood-type">Blood Type:</label>
+                <select id="blood-type">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter your location">
+                <button onclick="searchBloodDonors()">Search</button>
+            </div>
+            <div id="results-container">
+                <!-- Search results will be displayed here -->
+            </div>
+            <p>Search for donors based on location and blood type. Connect with donors who can make a difference.</p>
+        </div>
+         <!-- Include JavaScript file -->
+    <script src="script.js"></script>
+        
+
+    </section>
+
+    <!-- Blood Requests Section -->
+    <section class="blood-requests" id="requests">
+        <div class="container">
+            <h2><a href="br.html" target="_blank">Blood Requests</a></h2>
+            <p>View and respond to blood donation requests from patients and medical facilities in need.</p>
+        </div>
+    </section>
+
+    <!-- Blood Drives Section -->
+    <section class="blood-drives" id="drives">
+        <div class="container">
+            <h2><a href="bd.html" target="_blank">Blood drives</a></h2>
+            <p>Find and participate in upcoming blood donation drives in your area.</p>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta" id="register">
+        <div class="container">
+            <h2 ><a href="jt.html" target="_blank">join us</a></h2>
+            <p>Become a donor and make a difference in someone's life.</p>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="background">
+		<p class="text-footer">
+            Follow us on:
+            <a href="https://www.facebook.com/your-facebook-profile" target="_blank"><img src="./facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><img src="./linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/your-github-profile" target="_blank"><img src="git.png" alt="GitHub"></a>
+            <div class="container">
+                <p>&copy; 2023 Blood Donation Organization. All rights reserved.</p>
+            </div>
+        </p>
+        <p class="text-footer">
+
+        </p>
+
+
+	</footer>
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+</body>
+</html>
