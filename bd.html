@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Drive</title>
+    <!-- Include CSS file -->
+    <link rel="stylesheet" type="text/css" href="bd.css">
+</head>
+<body>
+    <h1>Blood Drive</h1>
+    <div class="blood-drive-container">
+        <h2>Upcoming Blood Drives</h2>
+        <ul id="upcoming-drives">
+            <!-- Blood drive information will be dynamically populated here -->
+        </ul>
+        <h2>Register for a Blood Drive</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email" required>
+        <label for="drive-id" >Blood Drive ID:</label>
+        <input type="text" id="drive-id" placeholder="Enter the blood drive ID" required>
+        <button onclick="registerForDrive()">Register</button>
+    </div>
+    <script>
+        function registerForDrive() {
+            // Get the values of the input fields
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var driveID = document.getElementById('drive-id').value.trim();
+    
+            // Check if the required fields are filled out
+            if (name === '' || email === '' || driveID === '') {
+                alert('Please fill out all the required fields.');
+                return;
+            }
+    
+            // Validate the email format
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+    
+            // If all validations pass, you can proceed with the registration (you can customize this action)
+            alert('Successfully registered for the blood drive!');
+        }
+    </script>
+    
+</body>
+</html>
