@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join Us Today</title>
+    <!-- Include CSS file -->
+    <link rel="stylesheet" type="text/css" href="jt.css">
+</head>
+<body>
+    <h1>Join Us Today</h1>
+    <div class="join-us-container">
+        <h2>Become a Blood Donor</h2>
+        <label for="donor-name">Name:</label>
+        <input type="text" id="donor-name" placeholder="Enter your name">
+        <label for="donor-blood-type">Blood Type:</label>
+        <select id="donor-blood-type">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        <label for="donor-location">Location:</label>
+        <input type="text" id="donor-location" placeholder="Enter your location">
+        <button onclick="registerAsDonor()">Register as Donor</button>
+
+        <h2>Volunteer with Us</h2>
+        <label for="volunteer-name">Name:</label>
+        <input type="text" id="volunteer-name" placeholder="Enter your name" required >
+        <label for="volunteer-interest">Area of Interest:</label>
+        <input type="text" id="volunteer-interest" placeholder="Enter your area of interest" required>
+        <button onclick="registerAsVolunteer()">Register as Volunteer</button>
+    </div>
+    
+    <script src="jt.js">
+        
+    </script>
+    
+</body>
+</html>
